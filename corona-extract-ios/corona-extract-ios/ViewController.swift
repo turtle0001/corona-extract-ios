@@ -12,7 +12,14 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		setupViews()
+	}
+	
+	private func setupViews() {
+		view.backgroundColor = .white
+		navigationItem.title = "PH Covid Cases"
+		navigationController?.navigationBar.prefersLargeTitles = true
+		
 	}
 
 
