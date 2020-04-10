@@ -44,14 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A4115A02440DAC6003CC8CC /* Helper Files */ = {
+		5A4115A02440DAC6003CC8CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				5A49D01B2440D334003EAA71 /* LaunchScreen.storyboard */,
 				5A49D0192440D334003EAA71 /* Assets.xcassets */,
 				5A49D01E2440D334003EAA71 /* Info.plist */,
 			);
-			path = "Helper Files";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5A49D0042440D32F003EAA71 = {
@@ -80,7 +80,7 @@
 				5A49D0122440D32F003EAA71 /* SceneDelegate.swift */,
 				5A49D0142440D32F003EAA71 /* ViewController.swift */,
 				5A49D0162440D32F003EAA71 /* Main.storyboard */,
-				5A4115A02440DAC6003CC8CC /* Helper Files */,
+				5A4115A02440DAC6003CC8CC /* Resources */,
 			);
 			path = "corona-extract-ios";
 			sourceTree = "<group>";
@@ -422,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "corona-extract-ios/Helper Files/Info.plist";
+				INFOPLIST_FILE = "corona-extract-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "corona-extract-ios/Helper Files/Info.plist";
+				INFOPLIST_FILE = "corona-extract-ios/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
