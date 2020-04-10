@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		5A49D0182440D32F003EAA71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A49D0162440D32F003EAA71 /* Main.storyboard */; };
 		5A49D01A2440D334003EAA71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A49D0192440D334003EAA71 /* Assets.xcassets */; };
 		5A49D01D2440D334003EAA71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A49D01B2440D334003EAA71 /* LaunchScreen.storyboard */; };
+		5A49D0282440D5A3003EAA71 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A49D0272440D5A3003EAA71 /* R.generated.swift */; };
 		BC8542623A608A58DB0099F4 /* Pods_corona_extract_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA468CC42577D34D9E8C25C /* Pods_corona_extract_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		5A49D0192440D334003EAA71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A49D01C2440D334003EAA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A49D01E2440D334003EAA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A49D0272440D5A3003EAA71 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		EB1E0B13672F564251291FD9 /* Pods-corona-extract-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-corona-extract-ios.debug.xcconfig"; path = "Target Support Files/Pods-corona-extract-ios/Pods-corona-extract-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		F25623AE012C0EF5303B1930 /* Pods-corona-extract-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-corona-extract-ios.release.xcconfig"; path = "Target Support Files/Pods-corona-extract-ios/Pods-corona-extract-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,10 +44,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A4115A02440DAC6003CC8CC /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A49D01B2440D334003EAA71 /* LaunchScreen.storyboard */,
+				5A49D0192440D334003EAA71 /* Assets.xcassets */,
+				5A49D01E2440D334003EAA71 /* Info.plist */,
+			);
+			path = "Helper Files";
+			sourceTree = "<group>";
+		};
 		5A49D0042440D32F003EAA71 = {
 			isa = PBXGroup;
 			children = (
 				5A49D00F2440D32F003EAA71 /* corona-extract-ios */,
+				5A49D0252440D582003EAA71 /* Supporting files */,
 				5A49D00E2440D32F003EAA71 /* Products */,
 				C193C84AEA683EB044A04A9A /* Pods */,
 				7A1F9C1362427E06933277E8 /* Frameworks */,
@@ -67,11 +80,25 @@
 				5A49D0122440D32F003EAA71 /* SceneDelegate.swift */,
 				5A49D0142440D32F003EAA71 /* ViewController.swift */,
 				5A49D0162440D32F003EAA71 /* Main.storyboard */,
-				5A49D0192440D334003EAA71 /* Assets.xcassets */,
-				5A49D01B2440D334003EAA71 /* LaunchScreen.storyboard */,
-				5A49D01E2440D334003EAA71 /* Info.plist */,
+				5A4115A02440DAC6003CC8CC /* Helper Files */,
 			);
 			path = "corona-extract-ios";
+			sourceTree = "<group>";
+		};
+		5A49D0252440D582003EAA71 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				5A49D0262440D592003EAA71 /* RSwift File */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		5A49D0262440D592003EAA71 /* RSwift File */ = {
+			isa = PBXGroup;
+			children = (
+				5A49D0272440D5A3003EAA71 /* R.generated.swift */,
+			);
+			path = "RSwift File";
 			sourceTree = "<group>";
 		};
 		7A1F9C1362427E06933277E8 /* Frameworks */ = {
@@ -88,7 +115,6 @@
 				EB1E0B13672F564251291FD9 /* Pods-corona-extract-ios.debug.xcconfig */,
 				F25623AE012C0EF5303B1930 /* Pods-corona-extract-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,9 +126,12 @@
 			buildConfigurationList = 5A49D0212440D334003EAA71 /* Build configuration list for PBXNativeTarget "corona-extract-ios" */;
 			buildPhases = (
 				1660EACB827B578253039570 /* [CP] Check Pods Manifest.lock */,
+				5A49D0242440D4DA003EAA71 /* R.Swift */,
 				5A49D0092440D32F003EAA71 /* Sources */,
 				5A49D00A2440D32F003EAA71 /* Frameworks */,
 				5A49D00B2440D32F003EAA71 /* Resources */,
+				3408EF92730C1E63A1223E46 /* [CP] Embed Pods Frameworks */,
+				5A49D0292440D7ED003EAA71 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -182,6 +211,61 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3408EF92730C1E63A1223E46 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-corona-extract-ios/Pods-corona-extract-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-corona-extract-ios/Pods-corona-extract-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-corona-extract-ios/Pods-corona-extract-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A49D0242440D4DA003EAA71 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		5A49D0292440D7ED003EAA71 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -192,6 +276,7 @@
 				5A49D0152440D32F003EAA71 /* ViewController.swift in Sources */,
 				5A49D0112440D32F003EAA71 /* AppDelegate.swift in Sources */,
 				5A49D0132440D32F003EAA71 /* SceneDelegate.swift in Sources */,
+				5A49D0282440D5A3003EAA71 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "corona-extract-ios/Info.plist";
+				INFOPLIST_FILE = "corona-extract-ios/Helper Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "corona-extract-ios/Info.plist";
+				INFOPLIST_FILE = "corona-extract-ios/Helper Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,3 +1,42 @@
-PODFILE CHECKSUM: 40af3678d9392763d8fa7638ec81751bdafbc97b
+PODS:
+  - Alamofire (4.9.1)
+  - JGProgressHUD (2.1)
+  - LBTATools (1.0.12)
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - SDWebImage (5.2.5):
+    - SDWebImage/Core (= 5.2.5)
+  - SDWebImage/Core (5.2.5)
+  - SwiftLint (0.39.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.0)
+  - JGProgressHUD (~> 2.1)
+  - LBTATools (~> 1.0.12)
+  - R.swift
+  - SDWebImage (~> 5.2.3)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JGProgressHUD
+    - LBTATools
+    - R.swift
+    - R.swift.Library
+    - SDWebImage
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  JGProgressHUD: aa403e9a5b45cae98903c4600cccdd98c0c3ec90
+  LBTATools: 389a901a01b9a56bea5682c40cd6e23530f40015
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  SDWebImage: 4eabf2fa6695c95c47724214417a9c036c965e4a
+  SwiftLint: 55e96a4a4d537d4a3156859fc1c54bd24851a046
+
+PODFILE CHECKSUM: 2c3bb582170f0bc08c39c869876dcd52364d171e
 
 COCOAPODS: 1.9.1
