@@ -19,8 +19,8 @@ struct Styles {
 		static let secondaryGray = #colorLiteral(red: 0.5125578046, green: 0.5181167722, blue: 0.5046983957, alpha: 1)
 		
 
-    static let textColorLight = UIColor.black  // for light colored backgrounds
-    static let textColorDark = UIColor.white  // for dark colored backgrounds
+    static let textColorLight = UIColor.white  // for light colored backgrounds
+    static let textColorDark = UIColor.black  // for dark colored backgrounds
 
     static let windowTint = Colors.primaryGray
     static let viewControllerBackground = UIColor.white
